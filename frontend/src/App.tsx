@@ -103,7 +103,7 @@ function SwapButton({ onClick }: { onClick: () => void }) {
 export default function App() {
 	const [sellValue, setSellValue] = useState("");
 
-	const [duration, setDuration] = useState(3);
+	const [duration] = useState(3);
 
 	const buyValue = useMemo(() => {
 		const num = Number(sellValue) * 2;
